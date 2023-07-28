@@ -220,7 +220,7 @@
 
             var url = e.data.url;
             console.log("Event received: " + JSON.stringify(e.data));
-            if (e.origin !== 'https://us.demo.amelia.com/Amelia/ui/puru/?domainCode=purunarayanan')
+            if (e.origin !== 'https://us.demo.amelia.com')
                 return;
 
             if (e.data.action === "checkout" && e.data.additionalData) {
