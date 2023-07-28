@@ -219,7 +219,8 @@
             // Check to make sure that this message came from the correct domain.
 
             var url = e.data.url;
-            if (e.origin !== 'https://MyAmelia.ipsoft.com')
+            console.log("Event received: " + JSON.stringify(data));
+            if (e.origin !== 'https://us.demo.amelia.com/Amelia/ui/puru/?domainCode=purunarayanan')
                 return;
 
             if (e.data.action === "checkout" && e.data.additionalData) {
