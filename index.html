@@ -204,6 +204,7 @@
             let entry = {}
             entry[key] = value;
             data['actionData'] = entry;
+            console.log("Send data: " + JSON.stringify(data));
             sendMessage(data);
         }
 
